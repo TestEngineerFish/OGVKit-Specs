@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   name = "oggz"
   libname = "lib" + name
-  ver = "1.2.0-1"
+  ver = "1.1.1"
   
   #libver = libname + "-" + ver
   #source = "https://downloads.xiph.org/releases/" + libname + "/" + libver + ".tar.gz"
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
 
   # go modular
   s.ios.deployment_target = "8.0"
-
-  s.homepage     = "https://xiph.org/" + name + "/"
+  
+  s.homepage     = "https://github.com/kfish/" + name + "/"
 
   s.license      = { :type => "BSD", :file => "COPYING" }
 
@@ -29,8 +29,8 @@ Pod::Spec.new do |s|
 
   #s.source       = { :http => source,
   #                   :sha1 => sha1 }
-  s.source       = { :git => "https://git.xiph.org/liboggz.git",
-                     :commit => "f49574ed723442f7bf83fb67b991b14c85c724a4"}
+  s.source       = { :git => "https://github.com/kfish/liboggz.git",
+                     :commit => "74277f6"}
 
   s.prepare_command = <<-'CMD'
                       echo '#define HAVE_DLFCN_H 1' > config.h
